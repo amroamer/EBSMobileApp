@@ -1,0 +1,72 @@
+<div class="oj-form-layout" style="height:100vh; background-color:rgb(114, 196, 194); ">
+    <div class="oj-form oj-sm-odd-cols-12 oj-md-odd-cols-4 oj-md-labels-inline" style="margin-top:100px; margin-right:20px;margin-left:20px;">
+
+
+        <div class="oj-flex-bar">
+            <div class="oj-flex-bar-center-absolute">
+                <img alt="profile image" src="http://www.splendidarabia.com/wp-content/uploads/2013/08/Saudi-Emblem.png" style="  width:150px;
+  height: 150px;">
+                <!--  <img alt="profile image" src="css/images/james_avatar.png" class="demo-james-icon"> -->
+                <!-- 	<img src="http://www.splendidarabia.com/wp-content/uploads/2013/08/Saudi-Emblem.png" width="200px" height="200px" /> -->
+
+
+            </div>
+        </div>
+
+        <div class="oj-flex" style="margin-top:80px;">
+            <div class="oj-flex-item">
+                <label for="username" class="oj-label " style="color: white; font-weight: bold;">		<span class="name" data-bind="text:usernameLabel " ></span></label>
+            </div>
+            <div class="oj-flex-item">
+
+                <input id="username" 
+					   type="text" 
+					   data-bind="ojComponent: {component: 'ojInputText',value: usernameInput}" 
+				       class="oj-hybrid-padding-horizontal login-input-text" />
+
+            </div>
+			
+			<div class="oj-flex-item">
+                <label for="password" style="margin-top:10px;color: white; font-weight: bold;" class="oj-label">		<span class="name" data-bind="text:passwordLabel "></span></label>
+            </div>
+            <div class="oj-flex-item">
+                <input id="password"  type="password" data-bind="ojComponent: {component: 'ojInputPassword',value: passwordInput}" class="oj-hybrid-padding-horizontal login-input-text" />
+
+            </div>
+			
+			 <div class="oj-flex-item">
+                <div class="oj-hybrid-applayout-toolbar-stretch">
+                    <button id="loginButton" 
+							data-bind="ojComponent:{component: 'ojButton', label: loginLabel},click:loginClick" 
+							style="color: white;border-radius: 25px;  background-color:#939393;"> </button>
+                    <button id="resetButton" 
+							data-bind="ojComponent: {component: 'ojButton', label: resetLabel},click:resetClick" 
+							style="color: white;border-radius: 25px;  background-color:#939393;"> </button>
+                </div>
+            </div>
+			
+        </div>
+
+       
+
+    </div>
+</div>
+
+
+  <div style="display:none" id="modalDialog1" title="Modal Dialog" 
+       data-bind="ojComponent:{component: 'ojDialog', initialVisibility: 'hide'}">
+	   
+	     <div id="progresscircle"  class="oj-hybrid-applayout-toolbar-stretch"
+          data-bind="ojComponent:{
+            component: 'ojProgressbar', 
+            type: 'circle',
+            value: progressValue}"
+          style="height:30px;width:30px"></div>
+     <div class="oj-dialog-body">
+    
+     </div>
+     <div class="oj-dialog-footer">
+        <button id="okButton" data-bind="ojComponent: {component: 'ojButton', label: 'OK'}"> </button>
+      </div>
+  </div>
+

@@ -1,0 +1,114 @@
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-applayout-page" style=" background-color:rgb(114, 196, 194); ">
+  <div class="oj-applayout-fixed-top">
+      <!--
+       ** Oracle JET V3.2.0 hybrid mobile application header pattern.
+       ** Please see the Oracle JET Cookbook App Shell: Hybrid Mobile demos for
+       ** more information on how to use this pattern.
+    -->
+    <header role="banner" class="oj-hybrid-applayout-header" data-bind="ojModule: headerConfig">
+    </header>
+  </div>
+  <!-- This is where your main page content will be loaded -->
+  <div class="oj-applayout-content">
+    <div role="main" class="oj-hybrid-applayout-content">
+      <div class="oj-hybrid-padding">
+                    <ul id="listview" aria-label="list with static data" data-bind="ojComponent: {component: 'ojListView', selectionMode: 'multiple'}" >
+
+                        <li id="amybartlet">
+                            <div class="container">
+
+                                <img width="200px" height="200px" data-bind="attr: {src: empimage, alt: name}" class="demo-james-icon"> </img>
+                            </div>
+                        </li>
+                        <li id="amybartlet">
+                            <div class="container">
+                                <div>
+
+                                    <span class="name" style="color:white;" data-bind="text:empUserName "></span>
+                                </div>
+                                <div>
+                                    <span class="oj-text-xs oj-text-secondary-color" style="color:white;" data-bind="text:userName "></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="andyjones">
+                            <div class="container">
+                                <div>
+                                    <span class="name" data-bind="text:empFullName " style="color:white;" ></span>
+                                </div>
+                                <div>
+                                    <span class="oj-text-xs oj-text-secondary-color" data-bind="text:fullName " style="color:white;" ></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="andrewbugsy">
+                            <div class="container">
+                                <div>
+                                    <span class="name" data-bind="text:empNumber " style="color:white;" ></span>
+                                </div>
+                                <div>
+                                    <span class="oj-text-xs oj-text-secondary-color" data-bind="text:employeeNumber " style="color:white;" ></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="annettbarnes">
+                            <div class="container">
+                                <div>
+                                    <span class="name" data-bind="text:empEmailAddress " style="color:white;" ></span>
+                                </div>
+                                <div>
+                                    <span class="oj-text-xs oj-text-secondary-color" data-bind="text:emailAddress " style="color:white;" ></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="bobjones">
+                            <div class="container">
+                                <div>
+                                    <span class="name" data-bind="text:empGradeName " style="color:white;" ></span>
+                                </div>
+                                <div>
+                                    <span class="oj-text-xs oj-text-secondary-color" data-bind="text:gradeName " style="color:white;" ></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="bartbuckler">
+                            <div class="container">
+                                <div>
+                                    <span class="name" data-bind="text:empPositionName "style="color:white;" ></span>
+                                </div>
+                                <div>
+                                    <span class="oj-text-xs oj-text-secondary-color" data-bind="text:positionName " style="color:white;" ></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="bobbyfisher">
+                            <div class="container">
+                                <div>
+                                    <span class="name" data-bind="text:empOrgName "style="color:white;" ></span>
+                                </div>
+                                <div>
+                                    <span class="oj-text-xs oj-text-secondary-color" data-bind="text:ogrName " style="color:white;" ></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="bobbyfisher">
+                            <div class="container">
+                                <div>
+                                    <span class="name" data-bind="text:empSupervisor " style="color:white;" ></span>
+                                </div>
+                                <div>
+                                    <span class="oj-text-xs oj-text-secondary-color" data-bind="text:supervisor " style="color:white;" ></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+               
+
+      </div>
+    </div>
+  </div>
+</div>

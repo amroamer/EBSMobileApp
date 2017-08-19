@@ -1,0 +1,59 @@
+<div class="oj-hybrid-applayout-page" style="background-color:rgb(114, 196, 194); ">
+    <div class="oj-applayout-fixed-top">
+        <header role="banner" class="oj-hybrid-applayout-header" data-bind="ojModule: headerConfig">
+        </header>
+    </div>
+    <!-- This is where your main page content will be loaded -->
+    <div class="oj-applayout-content" style=" background-color:rgb(114, 196, 194); ">
+        <div role="main" class="oj-hybrid-applayout-content">
+            <div class="oj-hybrid-padding">
+                <div id="listviewContainer" class="demo-container" >
+                    <div id="page1" class="demo-page" style="margin-top:50px;">
+                        <ul id="listview" aria-label="list using array" data-bind="ojComponent: {component: 'ojListView', data: dataSource, item: {template: 'rowTemplate'}
+										, selectionMode: 'single',  selection: selectedItems, optionChange: gotoContent}">
+                        </ul>
+
+                    </div>
+
+
+                    <div id="page2" class="demo-page demo-page2-hide"  style="display: none;margin-top:100px;">
+                        <button id="buttonIcon2" data-bind="click: gotoList, 
+                               ojComponent: {
+                                   component:'ojButton', 
+                                   icons: {start:'oj-fwk-icon-caret-start oj-fwk-icon'}, 
+                                   label: 'Back'
+                               }">
+						</button>
+						<br>
+						<div data-bind="html: notificationBodyHTML"></div>
+						  <!--   <span class="data"><span data-bind="text: notificationBodyHTML"></span></span> -->
+			
+                    </div>
+
+                </div>
+
+
+                <script type="text/html" id="rowTemplate">
+
+
+
+                    <li data-bind="attr: {id: $context.$itemContext.index}">
+                        <div class="container">
+                            <div>
+                                <label for="username"><span style="color: white;" data-bind="text: NotificationId "></label>
+                                <!-- 			<button id="loginButton" data-bind="ojComponent: {component: 'ojButton', label: usernameLabel}"> </button> -->
+
+                            </div>
+                            <div>
+                                <span class="data"><span style="color: white;" data-bind="text: Subject"></span></span>
+                            </div>
+                        </div>
+                    </li>
+
+                </script>
+
+            </div>
+        </div>
+    </div>
+
+</div>

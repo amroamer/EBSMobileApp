@@ -1,0 +1,50 @@
+define({
+  "root": {
+    "date": "Date:",
+    "greeting": "Good Morning",
+	"username" : "User Name",
+	"password" :"Password",
+	"login" : "Login",
+	"reset" : "Reset",
+	"ok":"Ok",
+	"wrongUserNameAndPassword" : "Wrong UserName and password",
+	"errorDialogTitle" : "Error Dialog Title",
+	"loginPage" : "Login Page",
+	"empUserName":"Employee Number" ,
+		"empFullName" :"Full Name",
+		"empNumber":"Employee Number",
+		
+		"empEmailAddress":"Email address",
+		"empGradeName" :"Grade",
+		"empPositionName" :"Position",
+		"empOrgName" : "Organization",
+		"empSupervisor" : "Supervisor",
+		"back": "Back",
+		"emptyUserNameAndPassword" : "Please fill the usernae and password",
+		"mobileAppName" : "EBS Mobile Application",
+		"profile" : "Profile",
+		"worklist": "Work List",
+		"about" : "About",
+		"requests": "Requests",
+		"addRequest": "Add Request",
+		"requestDate": "Request Date",
+		"employmentCertificationName": "Employment certification name",
+		"toWhomArabic" : "To Whom Arabic",
+		"endosermentRequired" : "Endoserment Required",
+		"justification" : "Justification",
+		"noOfCopies" : "No of copies",
+		"status": "status",
+		"submit" : "Submit",
+		"saveAndSubmit" : "Save and Submit",
+		"requestHistoryList": "Request History List",
+		"addRequest" : "Add Request",
+		"requestApproversList" : "Request Approvers",
+		"request": "Request",
+		"yes":"yes",
+		"no":"no"
+		
+		
+		
+},
+  "ar": true
+});

@@ -1,0 +1,109 @@
+
+
+
+ 
+ <div class="oj-hybrid-applayout-page" style="background-color:rgb(114, 196, 194); ">
+    <div class="oj-applayout-fixed-top">
+        
+		  <header role="banner" class="oj-hybrid-applayout-header" data-bind="ojModule: headerConfig">
+    </header>
+    </div>
+    <!-- This is where your main page content will be loaded -->
+    <div class="oj-applayout-content" style=" background-color:rgb(114, 196, 194); ">
+        <div role="main" class="oj-hybrid-applayout-content">
+            <div class="oj-hybrid-padding">
+			    <button id= "button"
+					data-bind="click:backToRequestHistoryList,
+                       ojComponent: { component: 'ojButton', label: backBtnLbl}">
+    </button>
+	<br>
+	
+	<ul id="listview" aria-label="list with static data" data-bind="ojComponent: {component: 'ojListView', selectionMode: 'multiple'}" >
+
+                      
+                        <li id="amybartlet">
+                            <div class="container">
+                                <div>
+
+                                    <span class="name" style="color:white;" data-bind="text:employmentCertificationNameLbl "></span>
+                                </div>
+                                <div>
+                                    <span class="oj-text-xs oj-text-secondary-color" style="color:white;" data-bind="text:certificationName "></span>
+                                </div>
+                            </div>
+                        </li>
+                          <li id="amybartlet">
+                            <div class="container">
+                                <div>
+
+                                    <span class="name" style="color:white;" data-bind="text:toWhomArabicLbl "></span>
+                                </div>
+                                <div>
+                                    <span class="oj-text-xs oj-text-secondary-color" style="color:white;" data-bind="text:whomNameArabic "></span>
+                                </div>
+                            </div>
+                        </li>
+						
+						    <li id="amybartlet">
+                            <div class="container">
+                                <div>
+
+                                    <span class="name" style="color:white;" data-bind="text:requestDateLbl "></span>
+                                </div>
+                                <div>
+                                    <span class="oj-text-xs oj-text-secondary-color" style="color:white;" data-bind="text:requestDate "></span>
+                                </div>
+                            </div>
+                        </li>
+                         <li id="amybartlet">
+                            <div class="container">
+                                <div>
+
+                                    <span class="name" style="color:white;" data-bind="text:endosermentRequiredLbl "></span>
+                                </div>
+                                <div>
+                                    <span class="oj-text-xs oj-text-secondary-color" style="color:white;" data-bind="text:endorsementRequired "></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="amybartlet">
+                            <div class="container">
+                                <div>
+
+                                    <span class="name" style="color:white;" data-bind="text:justificationLbl "></span>
+                                </div>
+                                <div>
+                                    <span class="oj-text-xs oj-text-secondary-color" style="color:white;" data-bind="text:justification "></span>
+                                </div>
+                            </div>
+                        </li>
+                          <li id="amybartlet">
+                            <div class="container">
+                                <div>
+
+                                    <span class="name" style="color:white;" data-bind="text:noOfCopiesLbl "></span>
+                                </div>
+                                <div>
+                                    <span class="oj-text-xs oj-text-secondary-color" style="color:white;" data-bind="text:noOfCopies "></span>
+                                </div>
+                            </div>
+                        </li>
+                          <li id="amybartlet">
+                            <div class="container">
+                                <div>
+
+                                    <span class="name" style="color:white;" data-bind="text:statusLbl "></span>
+                                </div>
+                                <div>
+                                    <span class="oj-text-xs oj-text-secondary-color" style="color:white;" data-bind="text:status "></span>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+               
+			</div>
+		</div>
+	</div>
+	
+	</div>

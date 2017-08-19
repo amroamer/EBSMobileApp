@@ -1,0 +1,92 @@
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding" style="background-color:rgb(114, 196, 194); ">
+  <h3> <span style="color: black;" data-bind="text: addRequestLbl "></h3>
+ <div id="form-container" class="oj-form-layout">
+  <div class="oj-form">
+  
+    <div class="oj-flex">  
+      <div class="oj-flex-item">
+        <label for="requestDate"><span style="color: white;" data-bind="text: requestDateLbl "></label>
+        <input id="requestDate" data-bind="ojComponent: 
+                   {component: 'ojInputText', value:'21/2/1991', required: true,readOnly: true}">
+      </div>
+    </div>
+	
+	
+	    <div class="oj-flex">  
+      <div class="oj-flex-item">
+          <label for="employmentCertificationName"><span style="color: white;" data-bind="text: employmentCertificationNameLbl "></label>
+        <select id="select" data-bind="ojComponent: {component: 'ojSelect',  
+                                             rootAttributes: {style:'max-width:20em'}}">
+  <!-- ko foreach: certificateNamesList -->
+  <option data-bind="value:certificateName, text:certificateName"></option>
+  <!-- /ko -->
+</select>
+		  </div>
+		  </div>
+	
+    <div class="oj-flex">  
+      <div class="oj-flex-item">
+    <label for="toWhomArabic"><span style="color: white;" data-bind="text: toWhomArabicLbl "></label>
+        <div class="oj-form-control-group" aria-labelledby="inputgrouplabel" role="group">
+          <input id="toWhomArabic" aria-label="this is the input1 label text" 
+                 data-bind="ojComponent: {component: 'ojInputText', value:'text'}">
+        </div>
+      </div>
+    </div>
+	
+	
+	
+	 <div class="oj-flex">  
+      <div class="oj-flex-item">
+        <label for="endosermentRequired"><span style="color: white;" data-bind="text: endosermentRequiredLbl "></label>
+		    <select id="endosermentRequired" data-bind="ojComponent: {component: 'ojSelect',  
+                                             rootAttributes: {style:'max-width:20em'}}">
+  <!-- ko foreach: endosermentRequiredArr -->
+  <option data-bind="value:value, text:label"></option> 
+  <!-- /ko -->
+</select>
+		
+	  
+    </div>
+  </div>
+	
+	
+	
+	  <div class="oj-flex">  
+      <div class="oj-flex-item">
+         <label for="justification"><span style="color: white;" data-bind="text: justificationLbl "></label>
+        <input id="justification" data-bind="ojComponent: 
+                   {component: 'ojInputText', value:'text', required: true}">
+      </div>
+    </div>
+   
+   
+   
+	  <div class="oj-flex">  
+      <div class="oj-flex-item">
+         <label for="noOfCopies"><span style="color: white;" data-bind="text: noOfCopiesLbl "></label>
+        <input id="noOfCopies" data-bind="ojComponent: 
+                   {component: 'ojInputText', value:'text', required: true}">
+      </div>
+    </div>
+	  <div class="oj-flex">  
+      <div class="oj-flex-item">
+         <label for="status"><span style="color: white;" data-bind="text: statusLbl "></label>
+        <input id="status" data-bind="ojComponent: 
+                   {component: 'ojInputText', value:'Requested', required: true , readOnly:true}">
+      </div>
+    </div>
+	
+	    <button id= "button"
+            data-bind="click:submitEmpCertificateRequest,
+                       ojComponent: { component: 'ojButton', label: submitBtnLbl }">
+    </button>
+
+	  
+	  
+</div>
+</div>

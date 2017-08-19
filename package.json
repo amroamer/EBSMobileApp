@@ -1,0 +1,23 @@
+{
+  "name": "EBSMobileApp",
+  "version": "1.0.0",
+  "description": "Oracle EBS Mobile Application",
+  "author": {
+    "name": "AppsPro Company",
+    "homepage": "http://appspro-me.com"
+  },
+  "dependencies": {
+    "oraclejet": "~3.2.0"
+  },
+  "devDependencies": {
+    "fs-extra": "0.30.0",
+    "grunt": "^1.0.1",
+    "grunt-oraclejet": "~3.2.0",
+    "load-grunt-config": "0.19.2",
+    "oraclejet-tooling": "~3.2.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "private": true
+}

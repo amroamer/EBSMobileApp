@@ -1,0 +1,38 @@
+<div class="oj-hybrid-applayout-page" style="background-color:rgb(114, 196, 194); ">
+    <div class="oj-applayout-fixed-top">
+        
+		  <header role="banner" class="oj-hybrid-applayout-header" data-bind="ojModule: headerConfig">
+    </header>
+    </div>
+    <!-- This is where your main page content will be loaded -->
+    <div class="oj-applayout-content" style=" background-color:rgb(114, 196, 194); ">
+        <div role="main" class="oj-hybrid-applayout-content">
+            <div class="oj-hybrid-padding">
+			    <button id= "button"
+            data-bind="click: addEmpCertificateRequest, 
+                       ojComponent: { component: 'ojButton', label: 'A button element' }">
+    </button>
+						<ul id="requestsItemListview" aria-label="list using array" data-bind="ojComponent: {component: 'ojListView', data: dataSource, item: {template: 'requestsItemTemplate'}
+										, selectionMode: 'single',  selection: selectedItems, optionChange: gotoContent}">
+                        </ul>
+			</div>
+		</div>
+	</div>
+	
+	</div>
+<script type="text/html" id="requestsItemTemplate">
+
+<li data-bind="attr: {id: $context.$itemContext.index}">
+                        <div class="container">
+                            <div>
+                                <label for="username"><span style="color: white;" data-bind="text: whomNameArabic "></label>
+                                <!-- 			<button id="loginButton" data-bind="ojComponent: {component: 'ojButton', label: usernameLabel}"> </button> -->
+
+                            </div>
+                            <div>
+                                <span class="data"><span style="color: white;" data-bind="text: requestDate"></span></span>
+                            </div>
+                        </div>
+                    </li>
+
+</script>
